@@ -1,7 +1,7 @@
 #! python
 
-label="Saxaphone"
-manifest_name="saxaphone.json"
+label="Saxophone"
+manifest_name="saxophone.json"
 manifest_id="https://spri-open-resources.s3.us-east-2.amazonaws.com/iiif3dtsg/manifests/20231220/" + manifest_name
 model_id="https://spri-open-resources.s3.us-east-2.amazonaws.com/iiif3dtsg/assets/saxophone.glb"
 

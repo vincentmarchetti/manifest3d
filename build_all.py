@@ -10,7 +10,7 @@ import sys, os.path
 
 manifest_entries = [
 ("Archimedes",    "archimedes.json", "build_archimedes.py"),
-("Saxaphone",     "saxphone.json",   "build_saxaphone.py"),
+("Saxaphone",     "saxophone.json",   "build_saxophone.py"),
 ("Nun's cell",    "nuns_cell.json",  "build_nuns_cell.py"),
 ("Venus de Milo", "venus.json"    ,  "build_venus.py"),
 ("Whale Skull",   "whale.json"    ,  "build_whale.py"),
