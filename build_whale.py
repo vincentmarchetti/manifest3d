@@ -25,8 +25,8 @@ ns = buildManifest(label, manifest_id)
 
 
 for model_url, location in [
-    (model_id_cranium,  (0.0,0.0,0.0)),
-    (model_id_mandible, (0.0,0.0,0.2))
+    (model_id_cranium,  (0.0, 0.15, -0.05)),
+    (model_id_mandible, (0.0, 0.0,   0.0))
 ]:
     body  = buildBasicAnnotationBody(model_url,  GLB_MIMETYPE ).body
     
@@ -34,9 +34,9 @@ for model_url, location in [
     target = pz.SpecificResource(   id=generate_local_uri(ns.manifest.id),
                                     source=ns.canvas.id,
                                     selector={  "type": "PointSelector", 
-                                                "x": str(x), 
-                                                "y": str(y), 
-                                                "z": str(z)
+                                                "x": x, 
+                                                "y": y, 
+                                                "z": z
                                               }
                                 )
                     
