@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Archimedes Prototype</title>
+        <script type='text/javascript' charset="UTF-8" src='https://x3dom.org/release/x3dom-full.js'> </script>         
+        <link rel='stylesheet' type='text/css' href='https://x3dom.org/release/x3dom.css'></link> 
+        <script type='text/javascript' charset="UTF-8" src='manifest_3d_tools.js'> </script>  
+        <style>
+            body {font-size:12pt}
+            
+            .canvas-width {width:960px;}
+            .canvas-height {height:512px; }
+            x3d
+            {
+                border:2px solid black;
+            }
+            
+            
+            
+            
+        </style>
+
+
+</head>
+<body>
+    <div class="canvas-width canvas-height" style="margin-bottom:0px;">
+    <x3d id="x3delem" class="canvas-width canvas-height"> 
+        <scene>
+        <navigationinfo headlight='true'></navigationinfo>
+        <background skyColor="0.9 0.9 1"></background>
+        <viewpoint position="0 0 10" orientation="0 0 1 0" 
+	     centerOfRotation="0 0 0" ></viewpoint>
+	     <transform scale="1 1 1">
+	    <inline   url='https://spri-open-resources.s3.us-east-2.amazonaws.com/iiif3dtsg/assets/archimedes9.glb'></inline>
+	    <transform translation="0.0 6.0 0.0">
+	    <inline   url='archimedes_theorem.x3d'></inline>
+	    </transform>
+	    </transform>
+    </scene>
+    </x3d> 
+    </div>
+</body>
+</html>

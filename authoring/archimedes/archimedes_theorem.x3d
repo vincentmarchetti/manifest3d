@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "http://www.web3d.org/specifications/x3d-3.3.dtd">
+<X3D xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" profile="Immersive" version="3.3" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.3.xsd">
+    <head>
+        <meta content="Mesh computed by Poisson reconstruction from white light scan point cloud data" name="description"/>
+        <meta content="Vincent Marchetti" name="creator"/>
+        <meta content="9 August 2018" name="created"/>
+        <meta name="license" content="http://creativecommons.org/licenses/by/4.0/"/>
+    </head>
+    <Scene>
+    
+<!-- 
+The colors used in this scene are a tribute to the Archimeded Lab website 
+and its logo https://www.colourlovers.com/palette/45871/Archimedes_lab_logo
+archimedes green (109, 192, 35) = (0.4275 0.7529 0.1373)
+archimedes orange (216, 129, 0) = (0.8471, 0.5059, 0.0000)
+darth gray (102 102 102)        = (0.4000 0.4000 0.4000)
+ -->
+
+<Switch whichChoice="-1">
+    <Shape>
+        <Box/>
+        <Appearance DEF="orange-color">
+            <Material ambientIntensity='3.0' diffuseColor='0.8471 0.5059 0.0000' shininess='0.1' specularColor='0.8471 0.5059 0.0000'/>
+        </Appearance>
+    </Shape>
+    
+    <Shape>
+        <Box/>
+        <Appearance DEF="green-color">
+            <Material ambientIntensity='3.0' diffuseColor='0.4275 0.7529 0.1373' shininess='0.1' specularColor='0.4275 0.7529 0.1373'/>
+        </Appearance>
+    </Shape>
+    
+    <Shape>
+        <Box/>
+        <Appearance DEF="font-color">
+            <Material ambientIntensity='5.0' diffuseColor='0.4000 0.4000 0.4000' />
+            
+        </Appearance>
+    </Shape>
+</Switch>
+<Transform DEF="theorem"  scale="0.75 0.75 0.75" rotation="0 1 0 3.1416">        
+    <Transform translation='-3.6 0 0'>		
+        <Shape>
+            <Sphere radius='1.0'/>
+            <Appearance USE="orange-color"/>
+        </Shape>
+    </Transform>
+        
+        
+    <Transform translation='-2.2 -0.25 0'>
+        <Shape>
+            <Text string='"+"' />
+            <Appearance USE="font-color"/>
+        </Shape>
+	</Transform>
+        
+    <Transform translation='-1 0 0'>
+        <Transform translation='0 -0.5 0'>
+            <Shape DEF='CONE'>
+                <Cone height='1.0' bottomRadius='1.0' bottom='true' side='true'/>
+                <Appearance USE="green-color"/>
+            </Shape>		
+        </Transform>
+		
+        <Transform rotation='0 0 1 3.1415' translation='0.0 0.5 0'>
+            <Shape USE='CONE'/>
+	    </Transform>
+    </Transform>
+	
+    <Transform translation='0.1 -0.25 0'>
+        <Shape>
+            <Text string='"="' />
+            <Appearance USE="font-color"/>
+        </Shape>
+	</Transform>
+
+    <Transform translation='1.9 0 0'>
+        <Shape>
+            <Cylinder height="2" radius="1" />
+            <Appearance USE="green-color"/>
+        </Shape>
+	</Transform>
+</Transform>
+    
+</Scene>
+</X3D>
