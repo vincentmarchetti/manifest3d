@@ -18,7 +18,7 @@ manifest_entries = [
 
 
 for _, manifest_name, script_name in manifest_entries:
-    commands = [sys.executable, script_name]
+    commands = ["env", "PYTHONPATH=iiif-prezi3", sys.executable, script_name]
     outfile = os.path.join("./dist", manifest_name)
     message = "executing %s > %s" % ( str(commands), outfile)
     logger.info(message)
