@@ -8,6 +8,7 @@ see https://www.iana.org/assignments/media-types/media-types.xhtml#model
     https://www.iana.org/assignments/media-types/model/gltf-binary
 """
 GLB_MIMETYPE = "model/gltf-binary"
+X3D_MIMETYPE = "model/x3d+xml"
 
 from .common import generate_local_uri
 from .manifest3d import buildManifest
