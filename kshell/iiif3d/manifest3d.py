@@ -29,7 +29,7 @@ def buildManifest(label, manifest_id):
     from types import SimpleNamespace
     
     manifest = pz.Manifest(id = manifest_id, label = label)
-    canvas = pz.Canvas(id = generate_local_uri(manifest_id), width=32, height=32)
+    canvas = pz.Canvas(id = generate_local_uri(manifest_id))
     anno_page = pz.AnnotationPage(id=generate_local_uri(manifest_id))
     manifest.add_item(canvas)
     canvas.add_item(anno_page)
