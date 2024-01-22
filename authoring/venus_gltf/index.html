@@ -19,17 +19,26 @@
             
             
         </style>
+        
+</head>
+<body>
 <table>
+    <tr>
+    <td>SketchFab glTF</td>
+    
+    <td>Alt metallicRoughness</td>
+    </tr>
 	<tr>
 		<td>
 		<div class="canvas-width canvas-height" style="margin-bottom:0px;">
     <x3d id="x3delem" class="canvas-width canvas-height"> 
         <scene>
-        <navigationinfo headlight='false'></navigationinfo>
-        <background skyColor="0.9 0.9 1"></background>
-
-        <directionallight ambientIntensity="1.0" direction="-1 -0.5 -0.866" intensity="1.0" color="1 1 1"></directionallight>
-        <directionallight ambientIntensity="0.0" direction=" 1 0 +1" intensity="0" color="1 1 1"></directionallight>
+               <navigationinfo headlight="false"></navigationinfo>
+                <environment tonemapping="reinhard"></environment>
+                <physicalenvironmentlight diffuse="https://x3dom.org/download/assets/pbr/papermillDiffuse.dds"
+                                          specular="https://x3dom.org/download/assets/pbr/papermillSpecular.dds">
+                </physicalenvironmentlight>
+                <background backURL="https://x3dom.org/download/assets/pbr/papermillDiffuse.dds"></background>
  
  
         <viewpoint position="0 0 10" orientation="0 0 1 0" 
@@ -44,32 +53,31 @@
     </div>
 		</td>
 		<td>
-		<div class="canvas-width canvas-height" style="margin-bottom:0px;">
-    <x3d id="x3delem" class="canvas-width canvas-height"> 
+<x3d id="x3delem" class="canvas-width canvas-height"> 
         <scene>
-        <navigationinfo headlight='false'></navigationinfo>
-        <background skyColor="0.9 0.9 1"></background>
-        <directionallight ambientIntensity="0.2" direction="-1 -0.5 -0.866" intensity="0.4" color="1 1 1"></directionallight>
-        <directionallight ambientIntensity="0.0" direction=" 1 0 +1" intensity="0.0" color="1 1 1"></directionallight>
+               <navigationinfo headlight="false"></navigationinfo>
+                <environment tonemapping="reinhard"></environment>
+                <physicalenvironmentlight diffuse="https://x3dom.org/download/assets/pbr/papermillDiffuse.dds"
+                                          specular="https://x3dom.org/download/assets/pbr/papermillSpecular.dds">
+                </physicalenvironmentlight>
+                <background backURL="https://x3dom.org/download/assets/pbr/papermillDiffuse.dds"></background>
  
  
         <viewpoint position="0 0 10" orientation="0 0 1 0" 
 	     centerOfRotation="0 0 0" ></viewpoint>
 	     <transform translation="0 -3.0 0">
-	     <transform scale="3 3 3">
-	    <inline   url='https://spri-open-resources.s3.us-east-2.amazonaws.com/iiif3dtsg/alternate_assets/venus_de_milo_aphrodite_of_milos.glb'></inline>
+	     <transform scale="0.003 0.003 0.003">
+	    <inline   url='venus_de_milo_statuestexturingchallenge_smk/scene_alt.gltf'></inline>
 	    </transform>
 	    </transform>
     </scene>
     </x3d> 
-    </div>
 		</td>
 	</tr>
 </table>
 
 
-</head>
-<body>
+
 
     
     
