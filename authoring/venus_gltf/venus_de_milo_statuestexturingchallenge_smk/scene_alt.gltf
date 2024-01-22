@@ -122,7 +122,7 @@
   ],
   "images": [
     {
-      "uri": "textures/Default_metallicRoughness.png"
+      "uri": "textures/Default_metallicRoughness_alt.png"
     },
     {
       "uri": "textures/Default_normal.jpeg"
